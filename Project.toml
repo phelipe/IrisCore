@@ -11,3 +11,9 @@ MLJ = "add582a8-e3ab-11e8-2d5e-e98b27df1bc7"
 [compat]
 DecisionTree = "= 0.10.1"
 MLJ = "= 0.11.2"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

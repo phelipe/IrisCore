@@ -4,15 +4,16 @@ using MLJ
 using DataFrames
 using DecisionTree
 
-jlsopath() = joinpath(@__DIR__,"modelo.jlso")
-@load RandomForestClassifier  pkg="DecisionTree"
-mach = machine(jlsopath())
+RandomForestClassifier()
+const jlsopath = String(joinpath(@__DIR__,"modelo2.jlso"))
 
-export predictiris
 
-function predictiris(in1::T, in2::T, in3::T) where {T<:Float64}
-    predict_mode( mach, DataFrame([[in1],[in2],[in3]],
-                 [:sepallength,:sepalwidth,:petallength]))
+export predict_iris
+
+function predict_iris(in1::T, in2::T, in3::T) where {T<:Float64}
+    mach_load = machine(jlsopath)
+    predict_mode( mach_load, DataFrame([[in1],[in2],[in3]],
+                  [:sepallength,:sepalwidth,:petallength]))[1]
 end
 
-end # module
+end 
