@@ -21,10 +21,10 @@ version = "0.2.6"
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 
 [[CategoricalArrays]]
-deps = ["DataAPI", "Future", "JSON", "Missings", "Printf", "Statistics", "Unicode"]
-git-tree-sha1 = "a6c17353ee38ddab30e73dcfaa1107752de724ec"
+deps = ["Compat", "DataAPI", "Future", "JSON", "Missings", "Printf", "Reexport", "Statistics", "Unicode"]
+git-tree-sha1 = "23d7324164c89638c18f6d7f90d972fa9c4fa9fb"
 uuid = "324d7699-5711-5eae-9e2f-1d82baa6b597"
-version = "0.8.1"
+version = "0.7.7"
 
 [[CodecZlib]]
 deps = ["TranscodingStreams", "Zlib_jll"]
@@ -67,9 +67,9 @@ version = "1.3.0"
 
 [[DataFrames]]
 deps = ["CategoricalArrays", "Compat", "DataAPI", "Future", "InvertedIndices", "IteratorInterfaceExtensions", "Missings", "PooledArrays", "Printf", "REPL", "Reexport", "SortingAlgorithms", "Statistics", "TableTraits", "Tables", "Unicode"]
-git-tree-sha1 = "a3b230f7c0db4ce95d14d2026777e27c1b0f63db"
+git-tree-sha1 = "7d5bf815cc0b30253e3486e8ce2b93bf9d0faff6"
 uuid = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
-version = "0.21.1"
+version = "0.20.2"
 
 [[DataStructures]]
 deps = ["InteractiveUtils", "OrderedCollections"]
@@ -222,15 +222,15 @@ version = "0.6.2"
 
 [[MLJ]]
 deps = ["CategoricalArrays", "ComputationalResources", "Distributed", "Distributions", "LinearAlgebra", "MLJBase", "MLJModels", "MLJScientificTypes", "MLJTuning", "Pkg", "ProgressMeter", "Random", "Statistics", "StatsBase", "Tables"]
-git-tree-sha1 = "c21b261f43a76bcf624c9b01ad2f122832c1aebe"
+git-tree-sha1 = "1e611c42e6d7edf9fe14fd72a9a882d10f1dcd81"
 uuid = "add582a8-e3ab-11e8-2d5e-e98b27df1bc7"
-version = "0.11.4"
+version = "0.11.2"
 
 [[MLJBase]]
-deps = ["CategoricalArrays", "ComputationalResources", "Dates", "DelimitedFiles", "Distributed", "Distributions", "HTTP", "InteractiveUtils", "InvertedIndices", "JLSO", "JSON", "LinearAlgebra", "LossFunctions", "MLJModelInterface", "MLJScientificTypes", "Missings", "OrderedCollections", "Parameters", "PrettyTables", "ProgressMeter", "Random", "ScientificTypes", "StableRNGs", "Statistics", "StatsBase", "Tables"]
-git-tree-sha1 = "7acf9fefd139d08b858db28df96eb90d882dde8c"
+deps = ["CategoricalArrays", "ComputationalResources", "Dates", "DelimitedFiles", "Distributed", "Distributions", "HTTP", "InteractiveUtils", "InvertedIndices", "JLSO", "JSON", "LinearAlgebra", "LossFunctions", "MLJModelInterface", "MLJScientificTypes", "Missings", "OrderedCollections", "Parameters", "PrettyTables", "ProgressMeter", "Random", "ScientificTypes", "Statistics", "StatsBase", "Tables"]
+git-tree-sha1 = "80cf971e619872c33f9486eacbcbd5b6b9068d2b"
 uuid = "a7f614a8-145f-11e9-1d2a-a57a1082229d"
-version = "0.13.6"
+version = "0.13.5"
 
 [[MLJModelInterface]]
 deps = ["Random", "ScientificTypes"]
@@ -240,15 +240,15 @@ version = "0.2.6"
 
 [[MLJModels]]
 deps = ["CategoricalArrays", "Dates", "Distances", "Distributions", "InteractiveUtils", "LinearAlgebra", "MLJBase", "MLJModelInterface", "MultivariateStats", "OrderedCollections", "Parameters", "Pkg", "Random", "Requires", "ScientificTypes", "Statistics", "StatsBase", "Tables"]
-git-tree-sha1 = "247a27bdee9a184df0665e25e832949ceed5d899"
+git-tree-sha1 = "799e9dc9bb5ba96729142713ce314edbbd072c7c"
 uuid = "d491faf4-2d78-11e9-2867-c94bc002c0b7"
-version = "0.9.11"
+version = "0.9.10"
 
 [[MLJScientificTypes]]
 deps = ["CategoricalArrays", "ColorTypes", "Dates", "PrettyTables", "ScientificTypes", "Tables"]
-git-tree-sha1 = "5296df0ffd2ff7c667260c027d03a465b59dcff5"
+git-tree-sha1 = "582d08e1a6853b748fecb9817120346dd01d52e1"
 uuid = "2e2323e0-db8b-457b-ae0d-bdfb3bc63afd"
-version = "0.2.7"
+version = "0.2.5"
 
 [[MLJTuning]]
 deps = ["ComputationalResources", "Distributed", "Distributions", "MLJBase", "MLJModelInterface", "ProgressMeter", "Random", "RecipesBase"]
@@ -442,12 +442,6 @@ deps = ["OpenSpecFun_jll"]
 git-tree-sha1 = "d8d8b8a9f4119829410ecd706da4cc8594a1e020"
 uuid = "276daf66-3868-5448-9aa4-cd146d93841b"
 version = "0.10.3"
-
-[[StableRNGs]]
-deps = ["Random", "Test"]
-git-tree-sha1 = "705f8782b1d532c6db75e0a986fb848a629f971a"
-uuid = "860ef19b-820b-49d6-a774-d7a799459cd3"
-version = "0.1.1"
 
 [[Statistics]]
 deps = ["LinearAlgebra", "SparseArrays"]
