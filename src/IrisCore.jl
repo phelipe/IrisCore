@@ -4,8 +4,7 @@ using MLJ:machine
 using MLJ:predict_mode
 using DataFrames
 using DecisionTree
-println(pwd(),"/src/modelo.jlso")
-mach = machine(pwd()*"modelo.jlso")
+mach = machine("/src/modelo.jlso")
 
 export predictiris
 
