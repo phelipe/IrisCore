@@ -6,7 +6,7 @@ using DecisionTree
 
 jlsopath() = joinpath(@__DIR__,"modelo.jlso")
 @load RandomForestClassifier  pkg="DecisionTree"
-mach = machine("/src/modelo.jlso")
+mach = machine(jlsopath())
 
 export predictiris
 
