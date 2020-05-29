@@ -4,7 +4,9 @@ using MLJ:machine
 using MLJ:predict_mode
 using DataFrames
 using DecisionTree
-mach = machine("/src/modelo.jlso")
+
+jlsopath() = joinpath(@__DIR__,"modelo.jlso")
+mach = machine( jlsopath() )
 
 export predictiris
 
