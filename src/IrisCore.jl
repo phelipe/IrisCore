@@ -1,7 +1,6 @@
 module IrisCore
 
-using MLJ:machine
-using MLJ:predict_mode
+using MLJ
 using DataFrames
 using DecisionTree
 
