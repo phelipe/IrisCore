@@ -1,4 +1,4 @@
-__precompile__()
+__precompile__(true)
 module IrisCore
 
 using MLJ
@@ -17,7 +17,8 @@ function predict_iris(in1::T, in2::T, in3::T) where {T<:Float64}
                   [:sepallength,:sepalwidth,:petallength]))[1]
 end
 
-precompile(predict_iris, (1.2,2.5,5.6))
-
+function __init__()
+    predict_iris(1.2,2.5,5.6)
+end
 
 end 
